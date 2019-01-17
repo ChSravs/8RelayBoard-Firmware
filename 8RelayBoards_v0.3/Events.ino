@@ -5,7 +5,7 @@ void onConnected(){
   JsonObject& onwifi = jsonBuffer.createObject();
   
   onwifi["Mode"] = "On Connected";
-  onwifi["SSID"] = WIFI_SSID;
+  onwifi["SSID"] = ssid;
   onwifi["IP"] = String(myIp);
   onwifi["MAC"] = mac;
   onwifi.printTo(msg);
